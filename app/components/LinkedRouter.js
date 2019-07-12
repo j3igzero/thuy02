@@ -15,8 +15,10 @@ export default class LinkedRouter extends React.Component {
         Linking
             .getInitialURL()
             .then(url => {
-                console.log('Initial url is: ' + url);
-                this.handleOpenURL({ url });
+                if (url) {
+                    console.log('Initial url is: ' + url);
+                    this.handleOpenURL({ url });
+                }
             })
             .catch(console.error);
 

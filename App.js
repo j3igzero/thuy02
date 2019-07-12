@@ -14,16 +14,14 @@ const scenes = Actions.create(
     </Scene>
 );
 
-crossroads.addRoute('greetings/{name}', name => Actions.greeting({ name }));
+crossroads.addRoute('greetings/{someone}', someone => Actions.greeting({ someone }));
 
 
 export default class App extends Component {
   render() {
 
     return (
-      <LinkedRouter scenes={scenes} scheme="exampleapp"/>
+      <LinkedRouter scenes={scenes} scheme="thuy"/>
     );
 	}
 }
-
-// export default <LinkedRouter scenes={scenes} scheme="exampleapp"/>;

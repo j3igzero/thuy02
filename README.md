@@ -1,9 +1,9 @@
 1. Tham khảo:
- * https://viblo.asia/p/deep-linking-voi-react-native-GrLZDXGVZk0
- * https://facebook.github.io/react-native/docs/linking
- * https://medium.com/the-react-native-log/handle-deep-links-in-react-native-apps-b22055149b3a
+  * https://viblo.asia/p/deep-linking-voi-react-native-GrLZDXGVZk0
+  * https://facebook.github.io/react-native/docs/linking
+  * https://medium.com/the-react-native-log/handle-deep-links-in-react-native-apps-b22055149b3a
 
-1. Gọi Deep Link đã đăng ký:
+2. Gọi Deep Link đã đăng ký:
   - Sử dụng thư viện Linking của React Native. 
     Xem file src/components/HomeMain.js
 
@@ -32,7 +32,7 @@
     };
     ```
 
-1. Đăng ký Deep Link
+3. Đăng ký Deep Link
     1. Cấu hình Android: Update file android/app/src/main/AndroidManifest.xml
       ```xml
       <activity
@@ -65,7 +65,7 @@
             * B3: tab Header Search Paths > nhập $(SRCROOT)/../node_modules/react-native/Libraries
             * B4: tab Info > thêm URL type > URL Schemes nhập "pwrnet" (giống với scheme ở cấu hình Android)
             * B5: Edit AppDelegate.m
-                ```swift
+                ```objc
                 // iOS 9.x or newer
                 #import <React/RCTLinkingManager.h>
 

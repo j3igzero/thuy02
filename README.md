@@ -1,5 +1,3 @@
-## Deep Link
-
 1. Tham khảo:
  * https://viblo.asia/p/deep-linking-voi-react-native-GrLZDXGVZk0
  * https://facebook.github.io/react-native/docs/linking
